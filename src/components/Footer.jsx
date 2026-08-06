@@ -1,7 +1,6 @@
 import { Container, Row, Col } from 'react-bootstrap';
 import { resumeData } from '../data/resumeData';
 import { FaGithub, FaLinkedinIn, FaEnvelope, FaHeart } from 'react-icons/fa';
-import { FaWhatsapp } from 'react-icons/fa6';
 
 const Footer = () => {
   const year = new Date().getFullYear();
@@ -33,9 +32,6 @@ const Footer = () => {
                 </a>
                 <a href={`mailto:${resumeData.personal.email}`} className="text-secondary text-decoration-none fs-5 d-flex align-items-center justify-content-center rounded-circle" style={{ width: '36px', height: '36px', border: '1px solid rgba(255,255,255,0.1)', transition: 'all 0.3s' }} onMouseEnter={(e) => { e.currentTarget.style.borderColor = 'var(--accent)'; e.currentTarget.style.color = 'var(--accent)'; }} onMouseLeave={(e) => { e.currentTarget.style.borderColor = 'rgba(255,255,255,0.1)'; e.currentTarget.style.color = ''; }}>
                   <FaEnvelope />
-                </a>
-                <a href="https://wa.me/919750179791" target="_blank" rel="noopener noreferrer" className="text-secondary text-decoration-none fs-5 d-flex align-items-center justify-content-center rounded-circle" style={{ width: '36px', height: '36px', border: '1px solid rgba(255,255,255,0.1)', transition: 'all 0.3s' }} onMouseEnter={(e) => { e.currentTarget.style.borderColor = '#25D366'; e.currentTarget.style.color = '#25D366'; }} onMouseLeave={(e) => { e.currentTarget.style.borderColor = 'rgba(255,255,255,0.1)'; e.currentTarget.style.color = ''; }}>
-                  <FaWhatsapp />
                 </a>
               </div>
             </div>
